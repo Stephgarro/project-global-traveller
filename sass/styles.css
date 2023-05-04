@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 20px 0px 40px 25px;
+}
+
+.componentConteiner {
+  border-bottom: 4px solid grey;
+}
+
+.componentConteiner--titleName {
+  margin: 15px 0px 10px 20px;
+}/*# sourceMappingURL=styles.css.map */

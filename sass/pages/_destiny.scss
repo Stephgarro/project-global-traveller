@@ -1,0 +1,32 @@
+.imgGeneralConteiner--rows{
+  width: 100%;
+  margin: 0 auto;  
+}
+
+.imgConteiner{
+  width: 100%;
+  margin: 0px auto 20px auto;
+}
+.imgConteiner--img{
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .imgGeneralConteiner--rows{
+  display: flex;
+  gap: 5px;
+  }
+  .HeroImg {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 1520px) and (min-width: 769px) {
+  .prueba{
+  display: flex;
+  gap: 10px;
+  }
+  .HeroImg {
+    height: 80vh;
+  }
+}

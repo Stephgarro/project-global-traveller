@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="public/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Hotels List</title>
+</head>
+<body>
+  <header class="menu-container">
+    <button class="menu__btn" >
+      <img src="./images/iconos/menu.svg" alt>
+    </button>
+    <nav class="menu__navegation" >
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__links" href="index.html">Home</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__links" href="destinieslist.html">Destinations</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__links" href="hotelslist.html">Hotels</a>
+        </li>
+        <li class="menu__item">
+          <button id="myBtn" class='darkButton'>Sing In</button>
+        </li>
+      </ul>
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close__modal">&times;</span>
+          <!--this is the sing in form-->
+          <div class="singIn-container">
+            <form class="singIn__form">
+              <h1 class="singIn__title">Sing In <span class="singIn__subtitle">Please enter your details</span></h1>
+              <label for="email" class="singIn__field">Email</label>
+              <input type="email" name="email" class="singIn__input" id="input" placeholder="Email" required>
+              <label for="Password" class="singIn__field">Password</label>
+              <input type="password" name="password" class="singIn__input"  placeholder="Password" required>
+              <a href="#" class="singIn__link">Forgot Password?</a>
+              <div class="singIn__btns-form">
+                <button class="singIn__btn singIn__btn-changes">Sign in</button>
+                <span class="singIn__span">Or</span>
+                <button class="singIn__btn singIn__btn-variant">Create an account</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="page__content" id="hotelsContent">
+  <h2 class="titles">Hotels</h2>
+    <div class="carousel">
+      <button class="carousel__arrow--previous"><span class="visually-hidden">Previous</span></button>
+      <button class="carousel__arrow--next"><span class="visually-hidden">Next</span></button>
+      <div class="carousel__container" id="hotelsCarousel">
+
+      </div>
+    </div>
+  </div>
+  <footer class="footer-container">
+    <div class="footer">
+      <!-- ///////////// newslatter ///////////-->
+      <div class="form-newsletter">
+        <form class="form-newsletter__container">
+          <div class="form-newslatter__request">
+            <label class="form-newslatter__request--description" for="email">Want to receive exclusive destination
+              offers?</label>
+            <input class="form-newslatter__request form-newslatter__request--email" type="email" id="email" name="email"
+              placeholder="Email address" />
+            <input class="form-newslatter__request form-newslatter__request--submit" type="submit" value="Subscribe" />
+          </div>
+        </form>
+      </div>
+      <!-- //////////navegation /////// -->
+      <div class="footer__politics">
+        <ul class="footer__list">
+          <li class="footer__list--title">Company</li>
+          <li class="footer__list--items footer__hover"><a class="footer__nav" href="#">About Us</a></li>
+          <li class="footer__list--items footer__hover"><a class="footer__nav" href="#">FAQ</a></li>
+          <li class="footer__list--items footer__hover"><a class="footer__nav" href="#">Contact Us</a></li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__list--title">Support</li>
+          <li class="footer__list--items footer__hover"><a class="footer__nav" href="#">Traveler Resources</a></li>
+          <li class="footer__list--items footer__hover"><a class="footer__nav" href="#">Discover</a></li>
+          <li class="footer__list--items footer__hover"><a class="footer__nav" href="#">Booking</a></li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__list--title">Places</li>
+          <li class="footer__list--items footer__hover"><a class="footer__nav" href="#">All destinations</a></li>
+          <li class="footer__list--items footer__hover"><a class="footer__nav" href="#">Car hire</a></li>
+          <li class="footer__list--items footer__hover"><a class="footer__nav" href="#">Places of interest</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- social media -->
+    <div class="footer__bottom">
+      <ul class="footer__bottom-social">
+        <li class="footer__bottom-social--whatsapp footer__hover">
+          <a href="#"><span class="visually-hidden">WhatsApp</span></a>
+        </li>
+        <li class="footer__bottom-social--facebook footer__hover">
+          <a href="#"><span class="visually-hidden">Facebook</span></a>
+        </li>
+        <li class="footer__bottom-social--instagram footer__hover">
+          <a href="#"><span class="visually-hidden">Instagram</span></a>
+        </li>
+        <li class="footer__bottom-social--twitter footer__hover">
+          <a href="#"><span class="visually-hidden">Twitter</span></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="scripts/hotelsPage.js"></script>
+  <script src="scripts/carousel.js"></script>
+  <script src="scripts/SingIn.js"></script>
+  <script src="scripts/header.js"></script>
+</body>
+</html>

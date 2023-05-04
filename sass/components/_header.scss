@@ -1,0 +1,119 @@
+.menu__links {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+	font-size: 20px;
+}
+
+/* Código */
+.menu-container {
+	// width: 100%;
+	background-color: $main__color;
+	padding: 1em;
+	color: white;
+	height: auto;
+}
+
+.menu__btn {
+	/* background-color: crimson; */
+	display: none;
+	background-color: $main__color;
+}
+
+.menu__list {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.menu__item {
+	margin: 0 .5em;
+	list-style-type: none;
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+	.menu__btn {
+		display: block;
+		cursor: pointer;
+	}
+
+	.menu__navegation {
+		width: 100%;
+		/* display: none; */
+		height: 0;
+		pointer-events: none;
+		overflow: hidden;
+		transition: all .5s ease;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.activo {
+		/* display: block; */
+		height: 25vh;
+		pointer-events: auto;
+	}
+
+	.menu__list {
+		flex-direction: column;
+	}
+
+	.menu__item {
+		margin: 0.5rem 0;
+	}
+
+	.darkButton {
+		font-size: 16px;
+		line-height: 24px;
+		padding: 3px 16px;
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+	.menu__links {
+		font-size: 26px;
+	}
+
+	.menu__list {
+		justify-content: center;
+	}
+
+	.menu__item {
+		justify-content: center;
+		padding: 0 10px;
+	}
+
+	.darkButton {
+		font-size: 20px;
+		width: 88px;
+		padding: 5px 11px;
+	}
+}
+
+@media screen and  (min-width: 769px) {
+	.menu__links {
+		font-size: 30px;
+	}
+
+	.menu__item {
+		justify-content: center;
+		padding: 0 43px;
+		justify-content: space-around;
+	}
+
+	.menu__list {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.darkButton {
+		font-size: 25px;
+		padding: 6px 12px;
+		width: 104px;
+	}
+}

@@ -1,0 +1,240 @@
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: gray;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+// to Close the  Button//
+.close__modal {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close__modal:hover,
+.close__modal:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.singIn-container {
+  font-weight: 500;
+  width: auto;
+  display: grid;
+  place-content: center;
+}
+
+.singIn__form {
+  width: auto;
+  background: #FFF;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 40px;
+  border-radius: 10px;
+  border: 1px solid #5f8a33;
+}
+
+.singIn__title {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.singIn__title:before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background: #000;
+  left: 0;
+}
+
+.singIn__subtitle {
+  display: flex;
+  font-size: 18px;
+  color: cadetblue;
+}
+
+.singIn__btns-form {
+  display: grid;
+  gap: .8rem;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 25px;
+}
+
+.singIn__input {
+  position: relative;
+  width: 100%;
+  padding: 22px 12px 6px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.singIn__link {
+  float: right;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.singIn__field {
+  visibility: hidden;
+}
+
+.singIn__btn {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.singIn__btn-changes {
+  background-color: gray;
+  color: #FFF;
+}
+
+.singIn__btn-variant {
+  background-color: #FFF;
+  color: gray;
+  border: gray solid 1px;
+}
+
+.singIn__span {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  color: gray;
+}
+
+.singIn__span::before,
+.singIn__span::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #000;
+  margin: auto;
+}
+
+.singIn__span::before {
+  margin-left: 10px;
+}
+
+.singIn__span::after {
+  margin-right: 10px;
+}
+
+@media (min-width:768px) and (max-width: 1023px) {
+  .singIn-container {
+    display: grid;
+    place-content: center;
+  }
+
+  .singIn__form {
+    display: grid;
+    width: 72vh;
+    height: 662px;
+    align-items: center;
+  }
+
+  .singIn__title {
+    font-size: 50px;
+  }
+
+  .singIn__subtitle {
+    font-size: 25px;
+  }
+
+  .singIn__field {
+    font-size: 16px;
+    visibility: visible;
+  }
+
+  .singIn__input {
+    height: 3rem;
+  }
+
+  #input::placeholder {
+    visibility: hidden;
+  }
+
+  .singIn__link {
+    font-size: 20px;
+    text-align: right;
+  }
+
+  .singIn__span {
+    font-size: 24px;
+  }
+
+  .singIn__btn {
+    font-size: 1.8rem;
+  }
+}
+
+
+
+
+@media (min-width:1024px) {
+  .singIn-container {
+    display: grid;
+    place-content: center;
+  }
+
+  .singIn__form {
+    width: 87vh;
+  }
+
+  .singIn__title {
+    font-size: 60px;
+  }
+
+  .singIn__subtitle {
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+
+  .singIn__field {
+    font-size: 20px;
+    visibility: visible;
+  }
+
+  #input::placeholder {
+    visibility: hidden;
+  }
+
+  .singIn__link {
+    font-size: 30px;
+    margin-top: 18px;
+  }
+
+  .singIn__btns-form {
+    width: 100%;
+    margin-top: 70px;
+  }
+
+  .singIn__btn {
+    font-size: 2rem;
+  }
+
+  .singIn__span {
+    font-size: 30px;
+  }
+}

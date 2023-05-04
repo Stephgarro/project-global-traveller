@@ -1,0 +1,202 @@
+.carousel {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.carousel__container {
+  padding: 0 20px 0 80px;
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  position: relative;
+  margin: 30px 0;
+}
+
+.card {
+  background-color: #ECF1F2;
+  // border: grey solid 1px;
+  flex: 0 0 auto;
+  max-width: 75%;
+  margin-right: 20px;
+  position: relative;
+  overflow-y: hidden;
+  border-radius: 20px;
+}
+
+.card__img {
+  width: 100%;
+  height: 150px;
+}
+
+.card__cta {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  padding: 0 50% 5% 0;
+}
+
+.card__cta::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+}
+
+.card:hover {
+  border: $light__blue solid 3px;
+  cursor: pointer;
+}
+
+.card__info {
+  margin: 0px 10px;
+  padding: 15px 5px;
+}
+
+.card__info--name {
+  font-size: 14px;
+  margin: 10px 0;
+  font-weight: bold;
+  width: 90%;
+}
+
+.card__info--description {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.card__info--price {
+  font-size: 12px;
+  display: flex;
+  justify-content: start;
+  color: $light__blue;
+  font-weight: bolder;
+  margin-left: 15px;}
+
+.price {
+  text-decoration: line-through;
+}
+
+.price-discount {
+margin-left: 5px;
+}
+
+.carousel__arrow--previous,
+.carousel__arrow--next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 3px;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: $dark__blue;
+  color: white;
+  opacity: .7;
+  z-index: 3;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.carousel__arrow--next::before {
+  content: url(./../../images/iconos/chevron-right-small.svg);
+}
+
+.carousel__arrow--previous::before {
+  content: url(./../../images/iconos/chevron-left-small.svg);
+}
+
+.carousel__arrow--next {
+  right: 0;
+}
+
+.carousel__arrow--next:hover,
+.carousel__arrow--previous:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .card {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width:481px) and (max-width: 767px) {
+  .card {
+    width: 47%;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+
+  .card {
+    max-width: 35%;
+    margin-right: 40px;
+  }
+
+  .card__cta {
+    padding: 0 50% 5% 0;
+  }
+
+  .card__info {
+    width: 100%;
+  }
+
+  .card__info--name {
+    font-size: 20px;
+  }
+
+  .card__info--description {
+    width: 90%;
+  }
+
+  .carousel__arrow--next::before {
+    content: url(./../../images/iconos/chevron-right-medium.svg);
+  }
+
+  .carousel__arrow--previous::before {
+    content: url(./../../images/iconos/chevron-left-medium.svg);
+  }
+}
+
+@media (min-width:1024px) {
+  .card {
+    width: 25%;
+  }
+
+  .card__info--name {
+    font-size: 24px;
+  }
+
+  .card__info--description {
+    width: 90%;
+    font-size: 20px;
+  }
+
+  .card__info--price {
+    font-size: 18px;
+  }
+
+  .card__img {
+    height: 250px;
+  }
+
+  .carousel__arrow--next::before {
+    content: url(./../../images/iconos/arrow-right.svg);
+  }
+
+  .carousel__arrow--previous::before {
+    content: url(./../../images/iconos/arrow-left.svg);
+  }
+}

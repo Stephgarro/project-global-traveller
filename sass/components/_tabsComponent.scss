@@ -1,0 +1,72 @@
+.tabs {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+[role="tablist"] {
+  margin: 0 auto;
+  width: 95%;
+}
+
+[role="tab"],
+[role="tab"]:focus,
+[role="tab"]:hover {
+  position: relative;
+  z-index: 2;
+  top: 2px;
+  margin: 0;
+  margin-top: 4px;
+  padding: 3px 3px 4px;
+  border: 2px solid gray;
+  border-bottom: 2px solid white;
+  border-radius: 5px 5px 0 0;
+  overflow: visible;
+  background: white;
+  outline: none;
+  font-weight: bold;
+}
+
+[role="tab"][aria-selected="true"] {
+  padding: 2px 2px 4px;
+  margin-top: 0;
+  border-width: 2px;
+  border-top-width: 10px;
+  border-top-color: $second__color;
+  border-bottom-color: white;
+  background: white;
+}
+
+[role="tab"][aria-selected="false"] {
+  border-bottom: 2px solid gray;
+}
+
+[role="tab"] span.focus {
+  display: inline-block;
+  margin: 10px;
+  padding: 4px 6px;
+  font-size: 20px;
+  color: $second__color;
+}
+
+[role="tab"]:hover span.focus,
+[role="tab"]:focus span.focus,
+[role="tab"]:active span.focus {
+  padding: 2px 4px;
+  border: 3px solid $second__color;
+  border-radius: 4px;
+}
+
+[role="tabpanel"] {
+  padding: 5px;
+  margin: 0 auto;
+  border: 2px solid gray;
+  border-radius: 0 5px 5px;
+  background: white;
+  min-height: 10em;
+  width: 95%;
+  overflow: auto;
+}
+
+[role="tabpanel"].is-hidden {
+  display: none;
+}

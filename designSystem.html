@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="public/css/styles.css">
+  <title>Desing system</title>
+</head>
+
+<body>
+  <h1>Design system</h1>
+
+  <div class="componentContainer"><!--Conponent conteiner-->
+
+    <!--header-->
+    <div class="componentConteiner"><!--Conponent conteiner-->
+      <h2 class="componentConteiner--titleName">Main Navegation </h2>
+      <header class="menu-container">
+        <button class="menu__btn">
+          <img src="/images/iconos/menu.svg" alt>
+        </button>
+        <nav class="menu__navegation">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__links" href="index.html">Home</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__links" href="destinieslist.html">Destinations</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__links" href="hotelslist.html">Hotels</a>
+            </li>
+            <li class="menu__item">
+              <button id="myBtn" class='darkButton'>Sing In</button>
+            </li>
+          </ul>
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close__modal">&times;</span>
+              <!--this is the sing in form-->
+              <div class="singIn-container">
+                <form class="singIn__form">
+                  <h1 class="singIn__title">Sing In <span class="singIn__subtitle">Please enter your details</span></h1>
+                  <label for="email" class="singIn__field">Email</label>
+                  <input type="email" name="email" class="singIn__input" id="input" placeholder="Email" required>
+                  <label for="Password" class="singIn__field">Password</label>
+                  <input type="password" name="password" class="singIn__input" id="input" placeholder="Password"
+                    required>
+                  <a href="#" class="singIn__link">Forgot Password?</a>
+                  <div class="singIn__btns-form">
+                    <button class="singIn__btn singIn__btn-changes">Sign in</button>
+                    <span class="singIn__span">Or</span>
+                    <button class="singIn__btn singIn__btn-variant">Create an account</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+
+    <!-- Buttons -->
+
+    <div class="componentContainer"><!--Conponent conteiner-->
+      <h2 class="componentConteiner__titleName">Light and Dark Button (with hover property)</h2>
+      <div class="buttonsArea">
+        <button class="darkButton" type="button">Button</button>
+        <button class="lightButton" type="button">Button</button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="componentContainer"><!--Conponent conteiner-->
+      <h2 class="componentConteiner__titleName">Footer</h2>
+      <div>
+        <!-- footer starts here -->
+        <div class="footer-container">
+          <div class="footer">
+            <!-- ///////////// newslatter ///////////-->
+            <div class="form-newsletter">
+              <form class="form-newsletter__container">
+                <div class="form-newslatter__request">
+                  <label class="form-newslatter__request--description" for="email">Want to receive exclusive destination
+                    offers?</label>
+                  <input class="form-newslatter__request form-newslatter__request--email" type="email" id="email"
+                    name="email" placeholder="Email address" />
+                  <input class="form-newslatter__request form-newslatter__request--submit" type="submit"
+                    value="Subscribe" />
+                </div>
+              </form>
+            </div>
+            <!-- //////////navegation /////// -->
+            <div class="footer__politics">
+              <ul class="footer__list">
+                <li class="footer__list--title">Company</li>
+                <li class="footer__list--items footer__hover"><a class="footer__nav" href="#">About Us</a></li>
+                <li class="footer__list--items footer__hover"><a class="footer__nav" href="#">FAQ</a></li>
+                <li class="footer__list--items footer__hover"><a class="footer__nav" href="#">Contact Us</a></li>
+              </ul>
+              <ul class="footer__list">
+                <li class="footer__list--title">Support</li>
+                <li class="footer__list--items footer__hover"><a class="footer__nav" href="#">Traveler Resources</a>
+                </li>
+                <li class="footer__list--items footer__hover"><a class="footer__nav" href="#">Discover</a></li>
+                <li class="footer__list--items footer__hover"><a class="footer__nav" href="#">Booking</a></li>
+              </ul>
+              <ul class="footer__list">
+                <li class="footer__list--title">Places</li>
+                <li class="footer__list--items footer__hover"><a class="footer__nav" href="#">All destinations</a></li>
+                <li class="footer__list--items footer__hover"><a class="footer__nav" href="#">Car hire</a></li>
+                <li class="footer__list--items footer__hover"><a class="footer__nav" href="#">Places of interest</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- social media -->
+          <div class="footer__bottom">
+            <ul class="footer__bottom-social">
+              <li class="footer__bottom-social--whatsapp footer__hover">
+                <a href="#"><span class="visually-hidden">WhatsApp</span></a>
+              </li>
+              <li class="footer__bottom-social--facebook footer__hover">
+                <a href="#"><span class="visually-hidden">Facebook</span></a>
+              </li>
+              <li class="footer__bottom-social--instagram footer__hover">
+                <a href="#"><span class="visually-hidden">Instagram</span></a>
+              </li>
+              <li class="footer__bottom-social--twitter footer__hover">
+                <a href="#"><span class="visually-hidden">Twitter</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Inquiry Form -->
+
+    <div class="componentContainer"><!--Conponent conteiner-->
+      <h2 class="componentConteiner__titleName">Inquiry Form</h2>
+      <div>
+        <form class="inquiryForm">
+          <div>
+            <h2>Inquiry Form</h2>
+          </div>
+          <label for="name">Name:</label>
+          <input class="inquiryForm__input" placeholder="Write your name here" type="text" id="name" name="name"
+            required>
+
+          <label for="phone">Phone:</label>
+          <input class="inquiryForm__input" placeholder="+111 000 888" type="tel" id="phone" name="phone">
+
+          <label for="email">Email:</label>
+          <input class="inquiryForm__input" placeholder="example@email.com" type="email" id="email" name="email"
+            required>
+
+          <label for="query">Query:</label>
+          <textarea class="inquiryForm__input inquiryForm__input--size" placeholder="Write your query here" id="query"
+            name="query" required></textarea>
+
+          <section class="inquiryForm__buttonArea">
+            <button class="inquiryForm__button" type="submit">Submit</button>
+          </section>
+        </form>
+      </div><!--component goes here-->
+    </div>
+
+
+    <!-- Buttons -->
+
+    <div class="componentContainer"><!--Conponent conteiner-->
+      <h2 class="componentConteiner__titleName">Tabs</h2>
+      <div>
+        <div class="tabs">
+          <div role="tablist" aria-labelledby="tablist-1" class="automatic">
+            <button id="tab-1" type="button" role="tab" aria-selected="true" aria-controls="tabpanel-1">
+              <span class="focus">Hotels</span>
+            </button>
+            <button id="tab-2" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-2" tabindex="-1">
+              <span class="focus">Destinies</span>
+            </button>
+          </div>
+
+          <div id="tabpanel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Rerum quibusdam sapiente fugit aspernatur architecto voluptate,
+              aperiam libero, dicta laboriosam perferendis voluptatibus, dolore facere.
+              Inventore illum aperiam totam recusandae voluptates sunt.
+            </p>
+          </div>
+          <div id="tabpanel-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2" class="is-hidden">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quidem ab et sit officia labore quaerat alias incidunt quam unde! Quae alias atque maiores
+              ducimus pariatur voluptate aut, placeat ipsum aperiam?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--<div class="componentContainer"><!--Conponent conteiner
+    <h2 class="componentConteiner__titleName"></h2>
+    <div>
+    </div>
+  </div>-->
+
+
+  <!--Carousel-->
+
+  <div class="componentConteiner"><!--Conponent conteiner-->
+    <h2 class="componentConteiner--titleName">Carousel</h2>
+    <div>
+      <div class="carousel">
+        <button class="carousel__arrow--previous"><span class="visually-hidden">Previous</span></button>
+        <button class="carousel__arrow--next"><span class="visually-hidden">Next</span></button>
+        <div class="carousel__container">
+          <div class="card">
+            <div class="card__image">
+              <img src="" alt="">
+            </div>
+            <div class="card__info">
+              <p class="card__info--name">Title</p>
+              <p class="card__info--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <a class="card__cta" href="#"><span class="visually-hidden">See Hotel</span></a>
+          </div>
+          <div class="card">
+            <div class="card__image">
+              <img src="" alt="">
+            </div>
+            <div class="card__info">
+              <p class="card__info--name">Title</p>
+              <p class="card__info--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <a class="card__cta" href="#"><span class="visually-hidden">See Hotel</span></a>
+          </div>
+          <div class="card">
+            <div class="card__image">
+              <img src="" alt="">
+            </div>
+            <div class="card__info">
+              <p class="card__info--name">Title</p>
+              <p class="card__info--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <a class="card__cta" href="#"><span class="visually-hidden">See Hotel</span></a>
+          </div>
+          <div class="card">
+            <div class="card__image">
+              <img src="" alt="">
+            </div>
+            <div class="card__info">
+              <p class="card__info--name">Title</p>
+              <p class="card__info--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <a class="card__cta" href="#"><span class="visually-hidden">See Hotel</span></a>
+          </div>
+          <div class="card">
+            <div class="card__image">
+              <img src="" alt="">
+            </div>
+            <div class="card__info">
+              <p class="card__info--name">Title</p>
+              <p class="card__info--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <a class="card__cta" href="#"><span class="visually-hidden">See Hotel</span></a>
+          </div>
+          <div class="card">
+            <div class="card__image">
+              <img src="" alt="">
+            </div>
+            <div class="card__info">
+              <p class="card__info--name">Title</p>
+              <p class="card__info--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <a class="card__cta" href="#"><span class="visually-hidden">See Hotel</span></a>
+          </div>
+          <div class="card">
+            <div class="card__image">
+              <img src="" alt="">
+            </div>
+            <div class="card__info">
+              <p class="card__info--name">Title</p>
+              <p class="card__info--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <a class="card__cta" href="#"><span class="visually-hidden">See Hotel</span></a>
+          </div>
+          <div class="card">
+            <div class="card__image">
+              <img src="" alt="">
+            </div>
+            <div class="card__info">
+              <p class="card__info--name">Title</p>
+              <p class="card__info--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <a class="card__cta" href="#"><span class="visually-hidden">See Hotel</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="scripts/carousel.js"></script>
+<script src="scripts/tabsMain.js"></script>
+<script src="scripts/SingIn.js"></script>
+<script src="scripts/header.js"></script>
+<script src="scripts/header.js"></script>
+
+</html>

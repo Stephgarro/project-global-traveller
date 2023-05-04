@@ -1,0 +1,31 @@
+{
+  "name": "proyecto1_proyecto-final",
+  "version": "1.0.0",
+  "description": "proyecto final curso proyecto1",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass -o public/css",
+    "sass-build": "node-sass sass -o public/css --output-style compressed",
+    "dev-server": "live-server --watch=\"index.html,sass,js\"",
+    "eslint": "eslint js",
+    "dev": "npm run sass-build && concurrently \"npm run sass\" \"npm run dev-server\" \"esw -w js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JUC24/proyecto1_proyecto-final.git"
+  },
+  "author": "jason",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JUC24/proyecto1_proyecto-final/issues"
+  },
+  "homepage": "https://github.com/JUC24/proyecto1_proyecto-final#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "live-server": "^1.2.2",
+    "livereload": "^0.9.3",
+    "node": "^19.6.1",
+    "node-sass": "^8.0.0",
+    "sass": "^1.58.3"
+  }
+}

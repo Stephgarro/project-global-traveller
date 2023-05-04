@@ -1,0 +1,68 @@
+.buttonsArea {
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+  width: fit-content;
+}
+
+.darkButton {
+  background-color: $second__color;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: solid $second__color;
+  border-width: thin;
+  margin: 10px 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.lightButton {
+  background-color: white;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: 3px solid black;
+  border-width: thin;
+  margin: 10px 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.darkButton:hover {
+  background-color: #af7800;
+}
+
+.lightButton:hover {
+  background-color: #D9D9D9;
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .buttonsArea{
+    flex-direction: column;
+    gap: 10px;
+
+  }
+  .lightButton{
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 16px;
+  }
+  .darkButton{
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 16px;
+  }
+}

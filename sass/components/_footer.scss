@@ -1,0 +1,147 @@
+.footer-container {
+  margin-top: 50px;
+  width: 100%;
+  color:white;
+  background-color: $main__color;
+  }
+
+.footer {
+  max-width: 85%;
+  padding: 45px 0 0 0 ;
+  margin: 0 auto;
+  }
+
+.form-newsletter {
+  width: 100%;
+  text-align: center;
+}
+
+.form-newsletter__container {
+  border-bottom: 1px solid white;
+}
+
+.form-newslatter__request {
+  max-width: 80%;
+  margin: 0 auto;
+  border: none;
+  padding: 10px 8px;
+  background-color: $main__color;
+  color: white;
+  font-weight: 700;
+  display: block;
+}
+
+.form-newslatter__request--description {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.form-newslatter__request--email {
+  background-color: white;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+  }
+
+.form-newslatter__request--submit {
+  margin-top: 8px;
+  text-decoration: underline;
+  cursor: pointer;
+  }
+
+.footer__list { 
+  text-align: center;
+  margin: 30px auto;
+  width: 150px;
+}
+
+.footer__nav {
+  color:white;
+	text-decoration: none;
+  }
+
+.footer__list--items {
+  margin: 5px;
+	list-style: none;
+}
+
+.footer__hover:hover {
+  opacity: .6;
+}
+
+.footer__list--title {
+  list-style: none;
+}
+
+.footer__bottom {
+  background-color: rgba(181, 181, 181, 0.458);
+  display: flex;
+  justify-content:right;
+  padding: 15px;
+}
+
+.footer__bottom--logo {
+  width: 70px; 
+  height: 50px;
+}
+
+.footer__bottom-social {
+  display: flex;
+  align-items: center;
+  margin: 0 10px; 
+	list-style: none;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.footer__bottom-social--whatsapp::before {
+  content: url(./../../images/iconos/whatsapp.png);
+  margin-right: 5px;
+}
+
+.footer__bottom-social--facebook::before {
+  content: url(./../../images/iconos/facebook.png);
+  margin-right: 5px;
+}
+
+.footer__bottom-social--instagram::before {
+  content: url(./../../images/iconos/instagram.png);
+  margin-right: 5px;
+}
+
+.footer__bottom-social--twitter::before {
+  content: url(./../../images/iconos/twitter.png);
+}
+
+@media (min-width: 768px)  {
+  .footer {
+    padding: 35px 0 0 0 ;
+    }
+
+  .form-newslatter__request {
+    max-width: 75%;
+  }
+
+  .footer__politics {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px)  {
+  .footer {
+    padding: 45px 0 0 0 ;
+    }
+  .form-newslatter__request {
+    max-width: 60%;
+  }
+}

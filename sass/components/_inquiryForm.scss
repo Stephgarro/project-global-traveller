@@ -1,0 +1,121 @@
+.inquiryForm {
+  width: 100%;
+  height: 30rem;
+}
+
+.inquiryForm__area {
+  width: 95%;
+  display: flex;
+  margin-left: 36px;
+  margin-top: 27px;
+}
+
+.inquiryForm__container {
+  width: 49%;
+}
+
+.inquiryForm-label {
+  display: flex;
+  width: 100%;
+  font-size: 24px;
+  padding: 12px;
+}
+
+.inquiryForm__input {
+  width: 90%;
+  height: 47px;
+  font-size: 22px;
+}
+
+.inquiryForm__edit {
+  height: 16rem;
+}
+
+.inquiryForm__buttonArea {
+  display: flex;
+}
+
+.inquiryForm__button {
+  width: 22%;
+  height: 47px;
+  margin-top: 40px;
+  margin-left: 36px;
+  color: #5577B5;
+  font-size: 25px;
+}
+
+.inquiryForm__button:hover {
+  color: #980183;
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .inquiryForm {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .inquiryForm__area {
+    width: 90%;
+    display: flex;
+    /* margin-left: 36px; */
+    /* margin-top: 27px; */
+    margin: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inquiryForm__container {
+    width: 100%;
+  }
+
+  .inquiryForm-label {
+    font-size: 20px;
+  }
+
+  .inquiryForm__input {
+    width: 85%;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .inquiryForm__edit {
+    height: 5rem;
+  }
+
+  .inquiryForm__buttonArea {
+    display: flex;
+    width: 90%;
+  }
+
+  .inquiryForm__button {
+    margin: 0;
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .inquiryForm {
+    width: 100%;
+  }
+
+  .inquiryForm__area {
+    width: 90%;
+    display: flex;
+    /* margin-left: 36px; */
+    /* margin-top: 27px; */
+    justify-content: space-around;
+    margin: 15px;
+  }
+
+  .inquiryForm__input {
+    width: 85%;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .inquiryForm__edit {
+    height: 17rem;
+  }
+}
